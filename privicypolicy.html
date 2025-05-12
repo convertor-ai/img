@@ -1,42 +1,351 @@
-Privacy Policy for 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | ImageConverterPro</title>
+    <style>
+        :root {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --text-color: #333;
+            --light-gray: #f5f5f5;
+            --dark-gray: #757575;
+            --border-radius: 8px;
+            --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-We respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our image conversion tool.
-1. Information We not Collect
-a. User-Provided Data
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    Uploaded Images: When you use our image conversion tool, you may upload images for processing. These images are temporarily stored only for the duration of the conversion and are automatically deleted afterward.
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+        }
 
-    Contact Information: If you contact us (e.g., via email or a support form), we may collect your name, email address, and message content.
+        header {
+            background-color: white;
+            box-shadow: var(--box-shadow);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-b. Automatically Collected Data
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
-    Usage Data: We may collect non-personal data such as IP address, browser type, device information, and pages visited to improve our service.
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    Cookies & Analytics: We use cookies and third-party services (e.g., Google Analytics) to track website performance and user behavior.
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
 
-2. How We Use Your Information
+        .logo span {
+            color: var(--secondary-color);
+        }
 
-    To provide and improve our image conversion service.
+        .privacy-container {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 2.5rem;
+            margin: 2rem auto;
+        }
 
-    To respond to customer inquiries and support requests.
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+        }
 
-    To analyze website traffic and optimize performance.
+        h2 {
+            color: var(--primary-color);
+            margin: 1.8rem 0 1rem;
+            font-size: 1.5rem;
+        }
 
-    To prevent fraud or misuse of our service.
+        h3 {
+            color: var(--dark-gray);
+            margin: 1.5rem 0 0.8rem;
+            font-size: 1.2rem;
+        }
 
-3. Data Storage & Security
+        p {
+            margin-bottom: 1rem;
+        }
 
-    Uploaded Images: All converted images are automatically deleted from our servers after processing. We do not permanently store your files.
+        ul {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
 
-    Security Measures: We implement industry-standard security practices to protect your data, including encryption (HTTPS/SSL) and secure server protocols.
+        li {
+            margin-bottom: 0.5rem;
+        }
 
-4. Third-Party Services
+        .last-updated {
+            font-style: italic;
+            color: var(--dark-gray);
+            margin-bottom: 2rem;
+        }
 
-We may use third-party services (e.g., cloud hosting, analytics) that process minimal data strictly for operational purposes. These providers are bound by confidentiality agreements and do not retain your images.
-5. Your Rights
+        .contact-info {
+            background-color: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin-top: 2rem;
+        }
 
-    Access & Deletion: You may request details about your stored data or ask for its deletion.
+        .contact-info h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
 
-    Opt-Out of Cookies: You can disable cookies in your browser settings.
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
 
-    Do Not Track: Our site does not currently respond to "Do Not Track" signals.
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .consent-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .consent-banner p {
+            margin-bottom: 0;
+            flex-grow: 1;
+            margin-right: 1rem;
+        }
+
+        .consent-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            border: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .privacy-container {
+                padding: 1.5rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .consent-banner {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .consent-buttons {
+                margin-top: 1rem;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">Image<span>Converter</span>Pro</a>
+            <div class="nav-links">
+                <a href="privacy-policy.html" class="active">Privacy Policy</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="privacy-container">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: <span id="update-date"></span></p>
+
+            <p>Welcome to ImageConverterPro (the "Website" or "Service"). We respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our image conversion tool.</p>
+
+            <h2>1. Information We Collect</h2>
+
+            <h3>a. User-Provided Data</h3>
+            <ul>
+                <li><strong>Uploaded Images:</strong> When you use our image conversion tool, you may upload images for processing. These images are temporarily stored only for the duration of the conversion and are automatically deleted afterward.</li>
+                <li><strong>Contact Information:</strong> If you contact us (e.g., via email or a support form), we may collect your name, email address, and message content.</li>
+            </ul>
+
+            <h3>b. Automatically Collected Data</h3>
+            <ul>
+                <li><strong>Usage Data:</strong> We may collect non-personal data such as IP address, browser type, device information, and pages visited to improve our service.</li>
+                <li><strong>Cookies & Analytics:</strong> We use cookies and third-party services (e.g., Google Analytics) to track website performance and user behavior.</li>
+            </ul>
+
+            <h2>2. How We Use Your Information</h2>
+            <ul>
+                <li>To provide and improve our image conversion service.</li>
+                <li>To respond to customer inquiries and support requests.</li>
+                <li>To analyze website traffic and optimize performance.</li>
+                <li>To prevent fraud or misuse of our service.</li>
+            </ul>
+
+            <h2>3. Data Storage & Security</h2>
+            <ul>
+                <li><strong>Uploaded Images:</strong> All converted images are automatically deleted from our servers after processing. We do not permanently store your files.</li>
+                <li><strong>Security Measures:</strong> We implement industry-standard security practices to protect your data, including encryption (HTTPS/SSL) and secure server protocols.</li>
+            </ul>
+
+            <h2>4. Third-Party Services</h2>
+            <p>We may use third-party services (e.g., cloud hosting, analytics) that process minimal data strictly for operational purposes. These providers are bound by confidentiality agreements and do not retain your images.</p>
+
+            <h2>5. Your Rights</h2>
+            <ul>
+                <li><strong>Access & Deletion:</strong> You may request details about your stored data or ask for its deletion.</li>
+                <li><strong>Opt-Out of Cookies:</strong> You can disable cookies in your browser settings.</li>
+                <li><strong>Do Not Track:</strong> Our site does not currently respond to "Do Not Track" signals.</li>
+            </ul>
+
+            <h2>6. Children's Privacy</h2>
+            <p>Our service is not intended for users under <strong>13 years of age</strong>, and we do not knowingly collect their data.</p>
+
+            <h2>7. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy periodically. Any changes will be posted here with a revised "Last Updated" date.</p>
+
+            <p>By using ImageConverterPro, you agree to this Privacy Policy.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="terms.html">Terms of Service</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <p>&copy; <span id="current-year"></span> ImageConverterPro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="consent-banner" id="consentBanner">
+        <p>We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.</p>
+        <div class="consent-buttons">
+            <button class="btn btn-primary" id="acceptCookies">Accept</button>
+            <button class="btn btn-secondary" id="rejectCookies">Reject</button>
+        </div>
+    </div>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Set last updated date
+        document.getElementById('update-date').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        // Cookie consent functionality
+        const consentBanner = document.getElementById('consentBanner');
+        const acceptCookies = document.getElementById('acceptCookies');
+        const rejectCookies = document.getElementById('rejectCookies');
+
+        // Check if user has already made a choice
+        if (!localStorage.getItem('cookieConsent')) {
+            consentBanner.style.display = 'flex';
+        }
+
+        acceptCookies.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'accepted');
+            consentBanner.style.display = 'none';
+            // Here you would typically load analytics scripts
+        });
+
+        rejectCookies.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'rejected');
+            consentBanner.style.display = 'none';
+            // Here you would typically block analytics scripts
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
