@@ -1,72 +1,298 @@
-Terms of Service for 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | ImageConverterPro</title>
+    <style>
+        :root {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --text-color: #333;
+            --light-gray: #f5f5f5;
+            --dark-gray: #757575;
+            --border-radius: 8px;
+            --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-By accessing or using our image conversion tool, you agree to comply with these Terms of Service ("Terms"). If you do not agree, please refrain from using our service.
-1. Acceptance of Terms
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-By using [Your Image Converter ], you confirm that you:
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+        }
 
-    Are at least 13 years old (or the legal age in your jurisdiction).
+        header {
+            background-color: white;
+            box-shadow: var(--box-shadow);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-    Accept these Terms and our Privacy Policy.
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
-    Will not use the service for illegal or unauthorized purposes.
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-2. Service Description
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
 
-Our Website provides an online tool to convert, compress, resize, or modify images in various formats.
+        .logo span {
+            color: var(--secondary-color);
+        }
 
-    Free & Paid Services: Some features may be free, while others require payment.
+        .terms-container {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 2.5rem;
+            margin: 2rem auto;
+        }
 
-    No Guarantees: We do not guarantee uninterrupted, error-free, or secure service at all times.
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+        }
 
-3. User Responsibilities
+        h2 {
+            color: var(--primary-color);
+            margin: 1.8rem 0 1rem;
+            font-size: 1.5rem;
+        }
 
-You agree to:
-✔ Use the service only for lawful purposes.
-✔ Not upload harmful, offensive, or copyrighted content without permission.
-✔ Not reverse-engineer, hack, or disrupt the Website’s functionality.
-✔ Not misuse automated tools (e.g., bots, scrapers) to overload our servers.
-4. Intellectual Property Rights
+        h3 {
+            color: var(--dark-gray);
+            margin: 1.5rem 0 0.8rem;
+            font-size: 1.2rem;
+        }
 
-    Your Content: You retain ownership of uploaded images, but grant us a limited license to process them for conversion.
+        p {
+            margin-bottom: 1rem;
+        }
 
-    Our Content: All website code, logos, and design are owned by [Your Company Name] and protected by copyright.
+        ul {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
 
-5. Data Privacy & Security
+        li {
+            margin-bottom: 0.5rem;
+        }
 
-    Temporary Storage: Uploaded images are automatically deleted after processing.
+        .last-updated {
+            font-style: italic;
+            color: var(--dark-gray);
+            margin-bottom: 2rem;
+        }
 
-    No Permanent Retention: We do not store your files long-term unless required for legal reasons.
+        .highlight-box {
+            background-color: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--primary-color);
+        }
 
-    See our Privacy Policy for details.
+        .prohibited-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+        }
 
-6. Prohibited Uses
+        .prohibited-icon {
+            color: #ea4335;
+            margin-right: 0.5rem;
+            font-weight: bold;
+        }
 
-You may not use this service to:
-❌ Upload malware, viruses, or illegal content.
-❌ Violate copyrights (e.g., converting images you don’t own).
-❌ Spam, harass, or exploit the service for commercial abuse.
-7. Limitation of Liability
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
 
-    [Your Company Name] is not liable for:
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-        Data loss, corruption, or misuse of converted files.
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
 
-        Third-party actions (e.g., hackers, service outages).
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
 
-        Indirect damages (e.g., lost profits, business interruptions).
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
 
-8. Termination
+        @media (max-width: 768px) {
+            .terms-container {
+                padding: 1.5rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">Image<span>Converter</span>Pro</a>
+            <div class="nav-links">
+                <a href="terms.html" class="active">Terms of Service</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </header>
 
-We reserve the right to:
+    <main class="container">
+        <div class="terms-container">
+            <h1>Terms of Service</h1>
+            <p class="last-updated">Last Updated: <span id="update-date"></span></p>
 
-    Suspend or terminate access for violations of these Terms.
+            <div class="highlight-box">
+                <p>By accessing or using ImageConverterPro (the "Website" or "Service"), you agree to be bound by these Terms of Service. If you do not agree, please do not use our service.</p>
+            </div>
 
-    Modify or discontinue the service without notice.
+            <h2>1. Acceptance of Terms</h2>
+            <p>By using ImageConverterPro, you confirm that you:</p>
+            <ul>
+                <li>Are at least <strong>13 years old</strong> (or the legal age in your jurisdiction)</li>
+                <li>Accept these Terms and our <a href="privacy-policy.html">Privacy Policy</a></li>
+                <li>Will not use the service for illegal or unauthorized purposes</li>
+            </ul>
 
-9. Changes to Terms
+            <h2>2. Service Description</h2>
+            <p>Our Website provides an online tool to <strong>convert, compress, resize, or modify images</strong> in various formats.</p>
+            <ul>
+                <li><strong>Free & Paid Services:</strong> Some features may be free, while others require payment</li>
+                <li><strong>No Guarantees:</strong> We do not guarantee uninterrupted, error-free, or secure service at all times</li>
+            </ul>
 
-We may update these Terms periodically. Continued use after changes constitutes acceptance.
-10. Governing Law
+            <h2>3. User Responsibilities</h2>
+            <p>You agree to:</p>
+            <ul>
+                <li>Use the service <strong>only for lawful purposes</strong></li>
+                <li><strong>Not upload</strong> harmful, offensive, or copyrighted content without permission</li>
+                <li><strong>Not reverse-engineer</strong>, hack, or disrupt the Website's functionality</li>
+                <li><strong>Not misuse</strong> automated tools (e.g., bots, scrapers) to overload our servers</li>
+            </ul>
 
-These Terms are governed by the laws of [Your Country/State]. Any disputes will be resolved in [Your Jurisdiction]’s courts.
+            <h2>4. Intellectual Property Rights</h2>
+            <ul>
+                <li><strong>Your Content:</strong> You retain ownership of uploaded images, but grant us a <strong>limited license</strong> to process them for conversion</li>
+                <li><strong>Our Content:</strong> All website code, logos, and design are owned by <strong>ImageConverterPro</strong> and protected by copyright</li>
+            </ul>
+
+            <h2>5. Prohibited Uses</h2>
+            <p>You <strong>may not</strong> use this service to:</p>
+            <div class="prohibited-item">
+                <span class="prohibited-icon">❌</span>
+                <span>Upload malware, viruses, or illegal content</span>
+            </div>
+            <div class="prohibited-item">
+                <span class="prohibited-icon">❌</span>
+                <span>Violate copyrights (e.g., converting images you don't own)</span>
+            </div>
+            <div class="prohibited-item">
+                <span class="prohibited-icon">❌</span>
+                <span>Spam, harass, or exploit the service for commercial abuse</span>
+            </div>
+
+            <h2>6. Limitation of Liability</h2>
+            <p><strong>ImageConverterPro</strong> is <strong>not liable</strong> for:</p>
+            <ul>
+                <li>Data loss, corruption, or misuse of converted files</li>
+                <li>Third-party actions (e.g., hackers, service outages)</li>
+                <li>Indirect damages (e.g., lost profits, business interruptions)</li>
+            </ul>
+
+            <h2>7. Termination</h2>
+            <p>We reserve the right to:</p>
+            <ul>
+                <li><strong>Suspend or terminate</strong> access for violations of these Terms</li>
+                <li><strong>Modify or discontinue</strong> the service without notice</li>
+            </ul>
+
+            <h2>8. Changes to Terms</h2>
+            <p>We may update these Terms periodically. Continued use after changes constitutes acceptance.</p>
+
+            <h2>9. Governing Law</h2>
+            <p>These Terms are governed by the laws of <strong>[Your Country/State]</strong>. Any disputes will be resolved in <strong>[Your Jurisdiction]'s courts</strong>.</p>
+
+            <p>By using <strong>ImageConverterPro</strong>, you acknowledge that you have read, understood, and agree to these Terms of Service.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="terms.html">Terms of Service</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <p>&copy; <span id="current-year"></span> ImageConverterPro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Set last updated date
+        document.getElementById('update-date').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
